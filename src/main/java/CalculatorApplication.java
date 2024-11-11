@@ -76,7 +76,7 @@ public class CalculatorApplication extends Application {
             double consumption = (fuel / distance) * 100;
             double price = consumption * 1.67;
             resultLabel.setText(String.format(bundle.getString("result.label"), String.format("%.2f", consumption)) +
-                    String.format("\nPrice: %.2f", price));
+                    String.format("\n" + bundle.getString("price.label"), price));
         } catch (NumberFormatException ex) {
             resultLabel.setText(bundle.getString("invalid.input"));
         }
