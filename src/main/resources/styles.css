@@ -1,0 +1,4 @@
+.label, .button {
+    -fx-font-family: "Tahoma", "Arial", "Helvetica", sans-serif;
+    -fx-font-size: 14px;
+}
